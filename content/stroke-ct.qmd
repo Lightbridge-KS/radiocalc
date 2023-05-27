@@ -1,0 +1,21 @@
+---
+title: Stroke CT Calculator
+format: html
+filters:
+  - shinylive
+---
+
+
+```{python}
+#| include: false
+#| eval: false
+import sys
+sys.path.insert(1, '../app')
+
+from test import hello
+
+hello()
+```
+
+
+{{< include _stroke-ct-app.qmd >}}

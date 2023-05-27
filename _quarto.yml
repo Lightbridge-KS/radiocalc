@@ -1,0 +1,23 @@
+project:
+  type: website
+
+execute-dir: project
+
+website:
+  title: "Radiology Calculator"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: content/stroke-ct.qmd
+        text: "Stroke CT"
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
