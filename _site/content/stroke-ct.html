@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -109,7 +128,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aspect" id="toc-aspect" class="nav-link active" data-scroll-target="#aspect">ASPECT</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -131,8 +156,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="aspect" class="level1">
+<h1>ASPECT</h1>
+<p>Choose all areas showing ischemic changes <span class="citation" data-cites="ASPECT_paedia">[<a href="#ref-ASPECT_paedia" role="doc-biblioref">1</a>]</span>:</p>
 <pre class="shinylive-python"><code>#| standalone: true
-#| viewerHeight: 400
+#| viewerHeight: 380
 
 from shiny import App, render, ui, reactive
 
@@ -222,7 +250,13 @@ app = App(stroke_ct_ui, stroke_ct_server, debug=True)
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-ASPECT_paedia" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Bell D, Sair H. Alberta stroke programme early CT score (ASPECTS). Radiopaedia.org, Radiopaedia.org; 2008. <a href="https://doi.org/10.53347/rID-4936">https://doi.org/10.53347/rID-4936</a>.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

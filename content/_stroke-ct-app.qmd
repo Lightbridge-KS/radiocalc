@@ -1,7 +1,7 @@
 
 ```{shinylive-python}
 #| standalone: true
-#| viewerHeight: 400
+#| viewerHeight: 380
 
 from shiny import App, render, ui, reactive
 

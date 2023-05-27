@@ -5,17 +5,8 @@ filters:
   - shinylive
 ---
 
+# ASPECT 
 
-```{python}
-#| include: false
-#| eval: false
-import sys
-sys.path.insert(1, '../app')
-
-from test import hello
-
-hello()
-```
-
+Choose all areas showing ischemic changes [@ASPECT_paedia]:
 
 {{< include _stroke-ct-app.qmd >}}

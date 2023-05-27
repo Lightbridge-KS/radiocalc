@@ -19,5 +19,6 @@ format:
     css: styles.css
     toc: true
 
-
+bibliography: assets/reference.bib
+csl: assets/elsevier-vancouver.csl
 
